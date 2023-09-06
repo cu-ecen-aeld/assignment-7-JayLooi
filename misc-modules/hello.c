@@ -5,9 +5,11 @@
 #include <linux/module.h>
 MODULE_LICENSE("Dual BSD/GPL");
 
+char username[] = "JayLooi";
+
 static int hello_init(void)
 {
-	printk(KERN_ALERT "Hello, world\n");
+	printk(KERN_ALERT "Hello, world! By %s. \n", username);
 	return 0;
 }
 
